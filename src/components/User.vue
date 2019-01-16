@@ -28,6 +28,7 @@
 </template>
 
 <script>
+  import global_ from '../App.vue'
 export default {
   name: 'User',
   data () {
@@ -40,7 +41,7 @@ export default {
         id: '1111',
         username: '1111',
         password: '1',
-        pic: 'http://localhost:8086/images/advertisement/63498178-25b3-4d87-aca5-0f672bda85c2-medium.jpg'
+        pic: global_.baseUrl+'/images/advertisement/63498178-25b3-4d87-aca5-0f672bda85c2-medium.jpg'
       }],
       multipleSelection: []
     }
@@ -68,7 +69,7 @@ export default {
     },
     fetchData:function(){ //获取数据
       var _this = this   //很重要！！
-      axios.get('http://localhost:8086/getList',{keywords:this.keywords})
+      axios.get(global_.baseUrl+'/getList',{keywords:this.keywords})
         .then(function (res) {
           console.log(res);
           _this.tableData = res.data.data;

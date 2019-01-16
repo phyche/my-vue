@@ -51,6 +51,7 @@
 </template>
 
 <script>
+  import global_ from '../App.vue'
 export default {
   name: 'UserAdd',
   data() {
@@ -69,7 +70,7 @@ export default {
   methods: {
     getOptions:function(){ //获取数据
       var _this = this   //很重要！！
-      axios.get('http://localhost:8086/getOptionList')
+      axios.get(global_.baseUrl+'/getOptionList')
         .then(function (res) {
           console.log(res);
           _this.options = res.data.data;
@@ -80,7 +81,7 @@ export default {
     },
     getTables:function(){ //获取数据
       var _this = this   //很重要！！
-      axios.get('http://localhost:8086/getList')
+      axios.get(global_.baseUrl+'/getList')
         .then(function (res) {
           console.log(res);
           _this.gridData = res.data.data;
