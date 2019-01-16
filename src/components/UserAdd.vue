@@ -1,6 +1,6 @@
 <template>
   <div id="UserAdd">
-    <!--<img src="./assets/logo.png">-->
+
     <div>
       <el-popover
         ref="popover1"
