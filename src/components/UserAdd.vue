@@ -44,6 +44,8 @@
       </el-dialog>
     </div>
     <el-button @click="dialogDelVisible = true">充值</el-button>
+
+    <el-button @click="getOptions"></el-button>测试
     <!--<router-view/>-->
   </div>
 </template>
