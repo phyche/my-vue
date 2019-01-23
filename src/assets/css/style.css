@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+/* star 基础样式 非必要情况请勿动*/
+* {
+    margin: auto 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif !important;
+
+}
+
+body {
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+.w-left {
+    float: left;
+}
+
+.w-right {
+    float: right;
+}
+
+.w-clear:before {
+    clear: both;
+}
+
+.w-text-left {
+    text-align: left;
+}
+
+.w-text-right {
+    text-align: right;
+}
+
+.w-text-center {
+    text-align: center;
+}
+
+.w-disPlayBlock {
+    display: block;
+}
+
+.w-displayNone {
+    display: none;
+}
+
+.mart20 {
+    margin-top: 20px;
+}
+.marl10{
+    margin-left: 10px;
+}
+
+.w-btn-gray {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+    background: #d9d9d9;
+    color: #606060;
+}
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-repeat: no-repeat;
+    vertical-align: sub;
+    margin-right: 8px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset;
+}
+
+/* end 基础样式 非必要情况请勿动*/
+
+/*图标*/
+
+.icon-return {
+    background-image: url("../images/icon_return.png");
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-data {
+    background-image: url("../images/icon_data.png");
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-work {
+    background-image: url("../images/icon_work.png");
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-rule {
+    background-image: url("../images/icon_rule.png");
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-look {
+    background-image: url("../images/icon_look.png");
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-home{
+    background-image: url("../images/icon_home.jpg");
+    width: 16px;
+    height: 16px;
+}
+
+.icon-dot{
+    background-image: url("../images/icon_dot.png");
+    margin: 0px;
+}
+
+.icon-star{
+    background-image: url("../images/icon_star.png");
+    margin: 0px;
+    width:18px;
+    height: 18px;
+}
+
+.icon-locking{
+    background-image: url("../images/icon_locking.png");
+    margin: 0px;
+    width:22px;
+    height: 22px;
+}
+.icon-change{
+    background-image: url("../images/icon_change.png");
+    margin: 0px;
+    width:18px;
+    height: 18px;
+}
+.icon-success{
+    background-image: url("../images/icon_success.png");
+    margin: 0px;
+    width:22px;
+    height: 22px;
+}
+.icon-end{
+    background-image: url("../images/icon_end.png");
+    margin: 0px;
+    width: 18px;
+    height: 18px;
+}
+
+.icon-me{
+    background-image: url("../images/icon_me.png");
+    width:22px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+/*后台样式*/
+.mainIframe{
+    background: #f7f7f7;
+}
+
+.managerHeader {
+    background-color: #0A77D3;
+    background-image: linear-gradient(143deg, #304dd8 20%,#0A77D3 81%,#0A77D3);
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 100%;
+    height: 55px !important;
+}
+
+.managerHeader .el-menu-item {
+    margin: 0px;
+    padding: 0px 5px 0px 10px;
+    height: 55px;
+    line-height: 55px;
+}
+
+.managerHeader .el-submenu__title {
+    margin: 0px 15px;
+    height: 55px !important;
+    line-height: 55px !important;
+}
+
+.managerHeader .el-submenu__title i {
+    color: #fff;
+}
+
+.header-menu {
+    border: none;
+    background: transparent !important;
+    float: right;
+}
+
+.header-logo {
+    width: 260px;
+    height: 40px;
+    margin: 5px 0px;
+    background-image: url(../images/logo_header.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 100%;
+}
+
+.managerMain {
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 0px;
+}
+
+.managerSidebar {
+    width: 200px;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    overflow-x: hidden;
+    background: #272a33;
+}
+
+
+.managerSidebar ul {
+    width: 200px;
+    border: none;
+}
+
+.managerSidebar ul:first-child {
+    height: 100%;
+
+}
+
+
+.w-main-iframe {
+    height: auto;
+    position: absolute;
+    top: 55px;
+    bottom: 0px;
+    left: 200px;
+    right: 0;
+    overflow: hidden;
+
+}
+
+.menuDisplacement .el-submenu__title {
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+}
+
+.menuDisplacement .el-submenu .el-menu-item {
+    font-size: 12px;
+    padding-left: 45px !important;
+    background: #2c323b!important;
+}
+
+.menuDisplacement .el-menu-item-group__title {
+    display: none;
+}
+
+.managerBread {
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    position: relative;
+}
+
+.managerBread .el-breadcrumb{
+    height: 40px;
+    line-height: 40px;
+}
+
+.managerBread span {
+    font-size: 12px;
+}
+
+.managerContent {
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+}
+
+.el-submenu .el-menu-item {
+    height: 35px;
+    line-height: 35px;
+}
+
+.managerContent .mangerBtn {
+    margin: 10px;
+}
+
+
+.el-table th>.cell{
+    color: #333;
+}
+
+.tablePage{
+    padding: 10px 0px;
+}
+
+.el-dialog__header{
+    padding: 15px 20px 10px;
+}
+.el-dialog__header span{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.table-scroll{
+    overflow-y: auto;
+}
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.table-scroll::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.table-scroll::-webkit-scrollbar-track
+{
+
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+/*定义滑块 内阴影+圆角*/
+.table-scroll::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.el-table::before{
+    height: 0px;
+}
+
+.return-btn {
+    font-size: 13px;
+    background: #fff;
+    border: none;
+    color: #409EFF;
+    position: absolute;
+    right: 0;
+    top: 1px;
+}
+
+.return-btn:hover, .return-btn:focus{
+    background: #fff;
+    border: none;
+    color: #228be6;
+}
+
+.tb-edit .el-input {
+    display: none
+}
+.tb-edit .current-row .el-input {
+    display: block
+}
+.tb-edit .current-row .el-input+span {
+    display: none
+}
+
+.managerContent-title{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-bottom: 1px solid #f7f7f7;
+    font-size: 16px;
+}
+
+.select-job{
+    position: absolute;
+    left: 90px;
+    top: 1px;
+}
+
+.tableInfo-step{
+   overflow: hidden;
+   width: 260px;
+   height: 60px;
+   padding-bottom: 20px;
+   margin: auto;
+}
+.tableInfo-step li{
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+.process-l div{
+    background: #2196F3;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid #2196F3;
+}
+
+.process-l p {
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.process-r{
+    width: 80px;
+    height: 1px;
+    background: #cbcbcb;
+    margin-top: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.process-r:after{
+    content: '';
+    width:0;
+    height:0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #c0d6e8;
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.process-r i.icon {
+    position: absolute;
+    top: -11px;
+    left: 26px;
+    z-index: 1000;
+}
+
+.el-dialog__body{
+    padding: 20px ;
+}
